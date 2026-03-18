@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>How I Met Nexsus</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <audio id="bgAudio" autoplay loop>
+        <source src="Stuff for people/Nexsus.mp3" type="audio/mp3">
+    </audio>
+    <div class="volume-slider-container">
+        <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
+    </div>
+    <main style="max-width:700px;margin:50px auto;color:white;font-family:'Courier New',Courier,monospace;text-align:center;">
+        <img src="pics/Me and nexsus.png" alt="Nexsus" class="profile-pic" style="width:150px;height:150px;border-radius:50%;border:4px solid var(--accent);margin-bottom:20px;box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+        <h1>Nexsus</h1>
+        <p>I met nexsus in a world on vrc we had beef bc he had kicked me from a group so i went to his lobby and crashed him till he blocked me then a few weeks after that we had become friends he is one of my really good friends and i would do anything for him love you bub
+        </p>
+        <a href="index.html" style="display:inline-block;margin-top:30px;padding:10px 20px;border-radius:30px;background:var(--accent);color:black;text-decoration:none;">Back to Profiles</a>
+    </main>
+    <script>
+        const audio = document.getElementById("bgAudio");
+        const slider = document.querySelector(".volume-slider");
+        if(slider){
+            audio.volume = slider.value;
+            slider.addEventListener("input", () => { audio.volume = slider.value; });
+        }
+    </script>
+</body>
+</html>

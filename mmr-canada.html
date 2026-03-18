@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>How I Met MMR~Canada</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <audio id="bgAudio" autoplay loop>
+        <source src="Stuff for people/MMR.mp3" type="audio/mp3">
+    </audio>
+    <div class="volume-slider-container">
+        <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
+    </div>
+    <main style="max-width:700px;margin:50px auto;color:white;font-family:'Courier New',Courier,monospace;text-align:center;">
+        <img src="pics/mmr-canada.png" alt="MMR~Canada" class="profile-pic" style="width:150px;height:150px;border-radius:50%;border:4px solid var(--accent);margin-bottom:20px;box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+        <h1>MMR~Canada</h1>
+        <p>Hai, I'm MMR~Canada I’m a very beginner dev (python, JS, .bat) learning (css,html) and I mainly want to go into cybersec, red teaming, C2-malware development.</p>
+        <a href="index.html" style="display:inline-block;margin-top:30px;padding:10px 20px;border-radius:30px;background:var(--accent);color:black;text-decoration:none;">Back to Profiles</a>
+    </main>
+    <script>
+        const audio = document.getElementById("bgAudio");
+        const slider = document.querySelector(".volume-slider");
+        if(slider){
+            audio.volume = slider.value;
+            slider.addEventListener("input", () => { audio.volume = slider.value; });
+        }
+    </script>
+</body>
+</html>
