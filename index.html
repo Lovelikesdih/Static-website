@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>;3</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="stars">
+    <span></span>
+    <div class="twinkle"></div>
+    <div class="twinkle"></div>
+    <div class="twinkle"></div>
+    <div class="twinkle"></div>
+</div>
+
+<body>
+
+    <div class="volume-slider-container">
+        <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
+    </div>
+
+    <audio id="bgAudio" autoplay loop>
+        <source src="Stuff for people/I'll Keep You Safe.mp3" type="audio/mp3" />
+    </audio>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="pics/mmr-canada.png" class="avatar" />
+            <h1>MMR~Canada</h1>
+            <p class="bio">Me :3</p>
+            <div class="links">
+                <a href="https://vrchat.com/home/user/usr_7cbf0e4c-f07a-4458-9ad6-4cfd715baffb" target="_blank"
+                    rel="noopener noreferrer">VRChat</a>
+                <a href="mmr-canada.html">Me</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/gov.gif" class="avatar" />
+            <h1>Gov JR</h1>
+            <p class="bio">Wannabe Doxer</p>
+            <div class="links">
+                <a href="" target="_blank" rel="noopener noreferrer">VRChat</a>
+                <a href="blood.html">How We Met</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Stuff for people/Critter pfp.png" class="avatar" />
+            <h1>Critter</h1>
+            <p class="bio">Furry Friend</p>
+            <div class="links">
+                <a href="" target="_blank" rel="noopener noreferrer">VRChat</a>
+                <a href="critter.html">How We Met</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/Me and nexsus.png" class="avatar" />
+            <h1>Nexsus</h1>
+            <p class="bio">Amazing Person</p>
+            <div class="links">
+                <a href="https://vrchat.com/home/user/usr_73fd3d91-3bbd-4845-8dd6-844d6b27ef1d" target="_blank"
+                    rel="noopener noreferrer">VRChat</a>
+                <a href="nexsus.html">How We Met</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/PurplesProfilepicture.png" class="avatar" />
+            <h1>Purple</h1>
+            <p class="bio">Gang Monkey</p>
+            <div class="links">
+                <a href="" target="_blank" rel="noopener noreferrer">VRChat</a>
+                <a href="purple.html">How We Met</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/" class="avatar" />
+            <h1>Big Wad</h1>
+            <p class="bio">Even Bigger Com Boss</p>
+            <div class="links">
+                <a href="https://waddleops.dev" target="_blank" rel="noopener noreferrer">WaddleOps</a>
+                <a href="https://github.com/bigwadd">Github</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Stuff for people/DB Lust.png" class="avatar" />
+            <h1>Lust</h1>
+            <p class="bio">Com Boy Skid</p>
+            <div class="links">
+                <a href="" target="_blank" rel="noopener noreferrer">VRChat</a>
+                <a href="lust.html">How We Met</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Stuff for people/senko pfp.png" class="avatar" />
+            <h1>Senko</h1>
+            <p class="bio">Coolio Furry</p>
+            <div class="links">
+                <a href="https://vrchat.com/home/user/usr_fb19587f-36e5-4c29-b18c-bf6d69ec928b" target="_blank"
+                    rel="noopener noreferrer">VRChat</a>
+                <a href="senko.html">How We Met</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/Ray's pfp.jpg" class="avatar" />
+            <h1>Ray</h1>
+            <p class="bio">Puppy dog</p>
+            <div class="links">
+                <a href="https://vrchat.com/home/user/usr_e4a4641d-4079-4ac1-bc47-101e54bdc763" target="_blank"
+                    rel="noopener noreferrer">VRChat</a>
+                <a href="ray.html">How We Met</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/ghost.png" class="avatar" />
+            <h1>qyet-ghost</h1>
+            <p class="bio">I like hamburgs</p>
+            <div class="links">
+                <a href="https://vrchat.com/home/user/usr_18f07449-f53f-45c1-9f97-7b0a96ff336b" target="_blank"
+                    rel="noopener noreferrer">VRChat</a>
+                <a href="qyet-ghost.html">How We Met</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/Ash.jpg" class="avatar" />
+            <h1>Ash</h1>
+            <p class="bio">Begged to be here</p>
+            <div class="links">
+                <a href="https://vrchat.com/home/user/usr_b06fb8c0-4371-4fb5-9ad6-7be9a48830b4" target="_blank"
+                    rel="noopener noreferrer">VRChat</a>
+                <a href="ash.html">How We Met</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const audio = document.getElementById("bgAudio");
+        const slider = document.querySelector(".volume-slider");
+
+
+        audio.volume = slider.value;
+
+
+        slider.addEventListener("input", () => {
+            audio.volume = slider.value;
+        });
+    </script>
+
+</body>
+
+</html>
